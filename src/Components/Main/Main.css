@@ -77,6 +77,11 @@
   background-image: url("./../Images/Desktop/image-graphic-design.jpg");
 }
 
+.cherry_bg p,
+.cherry_bg h1 {
+  color: hsl(167, 40%, 24%);
+}
+
 .grid-item_areas {
   display: flex;
   flex-direction: column;
@@ -89,15 +94,15 @@
   font-size: 2em;
   font-weight: 900;
   font-family: "Fraunces", serif;
-  color: hsl(167, 40%, 24%);
-}
-
-.grid-item_areas p {
-  color: hsl(167, 40%, 24%);
 }
 
 .tangerin_bg {
   background-image: url("./../Images/Desktop/image-photography.jpg");
+}
+
+.tangerin_bg p,
+.tangerin_bg h1 {
+  color: hsl(198, 62%, 26%);
 }
 
 /* Underline effect */

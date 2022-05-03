@@ -1,4 +1,3 @@
-import { experimentalStyled } from "@mui/material";
 import "./Testimonals.css";
 import Emily from "./../Images/image-emily.jpg";
 import Thomas from "./../Images/image-thomas.jpg";
@@ -29,11 +28,24 @@ export default function Testimonals() {
   return (
     <>
       <div className="testimonals_container">
+        <h1>Client Testimonials</h1>
         <div className="grid_container_testimals">
-          <div className="grid_testimonal">
-              
-          </div>
+          {testimonals.map((testimonals, id) => (
+            <div className="grid_testimonal">
+              <img src={testimonals.image} alt="client" />
+              <div className="testimonial_text">
+                <p> {testimonals.text} </p>
+              </div>
+              <div className="testimonial_name">
+                <h4> {testimonals.name} </h4>
+              </div>
+              <div className="testimonial_profession">
+                <h5> {testimonals.profession} </h5>
+              </div>
+            </div>
+          ))}
         </div>
+        ;
       </div>
     </>
   );
