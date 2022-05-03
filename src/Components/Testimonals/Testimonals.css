@@ -1,0 +1,13 @@
+.testimonals_container {
+  max-width: 1440px;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.grid_container_testimals {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+  padding: 0;
+  border: 1px solid black;
+}
