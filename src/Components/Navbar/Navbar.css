@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2.5em 2em;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", serif;
+  padding: 0 auto;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.list ul li:hover {
+  max-width: 1440px;
+  height: auto;
+  background-color: #dcaba0;
+  color: #fff;
+}
+
+.list_container:hover {
+  padding: 1em 2em;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    max-width: 1440px;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu ul li:hover {
+    max-width: 1440px;
+    height: 10vh;
+    background-color: #dcaba0;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
