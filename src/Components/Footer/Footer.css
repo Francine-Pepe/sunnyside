@@ -1,0 +1,54 @@
+/* FooterImages CSS */
+
+.images_container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+}
+
+.images {
+  object-fit: cover;
+  display: contents;
+}
+
+/* FooterNav CSS */
+
+.footer_nav_container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3.5em;
+  background-color: hsl(168, 34%, 41%);
+}
+
+.footer_nav {
+  padding: 1.5em;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  padding: 2em;
+}
+
+.list_container_nav a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Social Media CSS */
+
+.social_media_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.social_media_container a img:hover {
+  filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(10);
+}

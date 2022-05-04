@@ -10,12 +10,12 @@
 .navbar a {
   text-decoration: none;
   font-family: "Barlow", sans-serif;
-  color: whitesmoke;
+  color: 	rgb(255, 255, 255);
   font-size: 18px;
 }
 
 .navbar a:hover {
-  color: hsl(212, 27%, 19%);
+  color: rgb(255, 255, 255);
   font-family: "Fraunces", serif;
   padding: 0 auto;
 }
@@ -26,18 +26,20 @@
   gap: 25px;
 }
 
-.list ul li:hover {
-  max-width: 1440px;
-  height: auto;
-  background-color: #dcaba0;
-  color: #fff;
+.list_container {
+  width: 8em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: transparent;
 }
 
 .list_container:hover {
-  padding: 1em 2em;
-  border-radius: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
+  
 }
 
 #toggler,
@@ -63,7 +65,6 @@
   .menu ul li:hover {
     max-width: 1440px;
     height: 10vh;
-    background-color: #dcaba0;
     color: #fff;
     justify-content: center;
     display: flex;

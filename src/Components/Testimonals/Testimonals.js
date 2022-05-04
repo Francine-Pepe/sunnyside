@@ -45,7 +45,6 @@ export default function Testimonals() {
             </div>
           ))}
         </div>
-        ;
       </div>
     </>
   );
