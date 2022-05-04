@@ -31,13 +31,14 @@ export default function FooterImages() {
         }}
       >
         {images.map((images, id) => (
-          <div className="images">
+          <div className="images" key={id}>
             <img
               src={images.image}
               alt="footer_images"
               width={360}
               height={"100%"}
               style={{ padding: 0, margin: 0}}
+              
             />
           </div>
         ))}
