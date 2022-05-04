@@ -6,12 +6,14 @@
   flex-direction: column;
   align-items: center;
   padding: 5em;
+  
 }
 
 .grid_container_testimals {
   display: flex;
   justify-content: center;
   padding: 0;
+  height: fit-content;
 }
 
 .grid_testimonal {
@@ -59,4 +61,17 @@
 
 .testimonial_profession h5 {
   color: hsl(210, 4%, 67%);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+  .grid_testimonal .testimonial_name {
+    padding-top: 4em;
+  }
+
+  .testimonial_text p {
+    line-height: 1.4;
+  }
+  
 }
