@@ -4,7 +4,7 @@ import Glass from "./../Images/Desktop/image-stand-out.jpg";
 import Cherry from "./../Images/Desktop/image-graphic-design.jpg";
 import Orange from "./../Images/Desktop/image-photography.jpg";
 
-const main = [
+const areas = [
   {
     image: Cherry,
     title: "Graphic design",
@@ -19,13 +19,24 @@ const main = [
   },
 ];
 
+// const main = [
+//   {
+//     title: "Transform your brand",
+//     text: "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients throug compelling visuals that do most of the marketing for you."
+//   },
+//   {
+//     title: "Stand out to the right audience",
+//     text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places."
+//   },
+// ]
+
 export default function Main() {
   return (
     <>
       <main className="main_container">
-        <div class="grid-container">
-          <div class="grid-item">
-            <div class="grid-item_text">
+        <div className="grid-container">
+          <div className="grid-item">
+            <div className="grid-item_text">
               <h1>
                 Transform your <br /> brand
               </h1>
@@ -41,43 +52,45 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div class="grid-item">
+          <div className="grid-item">
             <img src={Egg} alt="egg" />
           </div>
-          <div class="grid-item">
+          <div className="grid-item">
             <img src={Glass} alt="egg" />
           </div>
-          <div class="grid-item_text">
-            <h1>Stand out to the right audience</h1>
-            <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <div className="link_hover">
-              <a className="pink_link" href="/">
-                LEARN MORE
-              </a>
+          <div className="grid-item">
+            <div className="grid-item_text">
+              <h1>Stand out to the right audience</h1>
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <div className="link_hover">
+                <a className="pink_link" href="/">
+                  LEARN MORE
+                </a>
+              </div>
             </div>
           </div>
-          {main.map((main, id) => (
-            <div class="grid-item">
-              <div class="grid-item_areas">
+          {areas.map((areas, index) => (
+            <div className="grid-item" key={index}>
+              <div className="grid-item_areas">
                 <div
                   style={{
-                    backgroundImage: `url(${main.image})`,
-                    backgroundRepeat: 'no-repeat',
-                    width: 720,
-                    height: 600,
+                    backgroundImage: `url(${areas.image})`,
+                    backgroundRepeat: "no-repeat",
+                    width: "45em",
+                    height: "100%",
                     justifyContent: "center",
                     alignItems: "flex-end",
-                    display: 'flex',
-                    
+                    display: "flex",
+                    textAlign: "center",
                   }}
                 >
-                  <div className="grid-item_areas_text">
-                    <h1 style={{ color: main.color }}>{main.title}</h1>
-                    <p style={{ color: main.color }}>{main.text}</p>
+                  <div className="grid-item_areas_text" key={index}>
+                    <h1 style={{ color: areas.color }}>{areas.title}</h1>
+                    <p style={{ color: areas.color }}>{areas.text}</p>
                   </div>
                 </div>
               </div>

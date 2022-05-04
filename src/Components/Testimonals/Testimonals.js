@@ -30,9 +30,9 @@ export default function Testimonals() {
       <div className="testimonals_container">
         <h1>Client Testimonials</h1>
         <div className="grid_container_testimals">
-          {testimonals.map((testimonals, id) => (
-            <div className="grid_testimonal">
-              <img src={testimonals.image} alt="client" />
+          {testimonals.map((testimonals, item) => (
+            <div className="grid_testimonal" key={item}>
+              <img src={testimonals.image} alt="client"  />
               <div className="testimonial_text">
                 <p> {testimonals.text} </p>
               </div>

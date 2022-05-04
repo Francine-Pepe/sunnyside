@@ -1,6 +1,5 @@
 .main_container {
-  max-width: 1540px;
-  justify-content: center;
+  max-width: 1440px;  justify-content: center;
   align-items: center;
   height: 100%;
   
@@ -8,7 +7,7 @@
 
 .grid-container {
   display: grid;
-  max-width: 1540px;
+  max-width: 1440px;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
   padding: 0;
@@ -21,6 +20,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
+  
 }
 
 .grid-item img {
@@ -47,6 +47,9 @@
   flex-direction: column;
   padding: 7em;
   text-align: left;
+  max-width: 32em;
+  justify-content: center;
+  
 }
 
 .grid-item_text a {

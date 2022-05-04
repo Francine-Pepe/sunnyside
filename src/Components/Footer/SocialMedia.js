@@ -24,7 +24,7 @@ export default function SocialMedia() {
         <>
         <div className='social_media_container'>
         {SocialMedia.map((SocialMedia, id) => (
-            <a href="/" ><img src={SocialMedia.image} alt="" /></a>
+            <a href="/" key={id} ><img src={SocialMedia.image} alt="social_media"  /></a>
         ))}
         </div>
         

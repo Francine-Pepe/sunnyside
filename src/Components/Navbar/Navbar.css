@@ -10,7 +10,7 @@
 .navbar a {
   text-decoration: none;
   font-family: "Barlow", sans-serif;
-  color: 	rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
 
@@ -23,7 +23,7 @@
 .list {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 2em;
 }
 
 .list_container {
@@ -39,33 +39,66 @@
 .list_container:hover {
   background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
-  
 }
 
 #toggler,
-.navbar label {
+.navbar label,
+#triangle {
   display: none;
 }
 
 /* Media Queries */
 
+@media only screen and (max-width: 831px) {
+  .list {
+    align-items: center;
+    gap: 1em;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .menu {
-    max-width: 1440px;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .menu ul li a {
+    color: hsl(212, 27%, 19%);
+  }
+
+  .menu ul li a:hover {
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", serif;
+  }
+
+  .menu .list_container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: transparent;
+  }
+
+  .menu .list_container:hover {
+    background-color: hsl(51, 100%, 49%);
+    width: 8em;
+    height: 3em;
+
   }
 
   .list {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2em;
   }
 
   .menu ul li:hover {
-    max-width: 1440px;
+    width: 100vw;
     height: 10vh;
-    color: #fff;
+    color: hsl(212, 27%, 19%);
     justify-content: center;
     display: flex;
     align-items: center;
@@ -80,4 +113,12 @@
   #toggler:checked ~ .menu {
     max-height: 100%;
   }
+
+  #triangle  {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+  }
+  
 }
