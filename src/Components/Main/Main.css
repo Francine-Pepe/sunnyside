@@ -144,7 +144,7 @@
     auto calc(var(--underline-width) * 1px);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .grid-item {
     text-align: center;
     padding: 0;
