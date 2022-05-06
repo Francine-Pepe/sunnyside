@@ -19,8 +19,6 @@ export default function Navbar() {
           </svg>
         </label>
         <div className="menu">
-        <div id="triangle"></div>
-
           <ul className="list">
             <li className="list_container">
               <a href="#about">About</a>
