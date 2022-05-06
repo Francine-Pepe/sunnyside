@@ -108,7 +108,8 @@
   }
 
   .testimonals_container h1 {
-    font-size: 0.5em;
-    letter-spacing: 0;
+    font-size: 1em;
+    margin-top: 2em;
+    text-align: center;
   }
 }

@@ -35,7 +35,7 @@ export default function FooterImages() {
             <img
               src={images.image}
               alt="footer_images"
-              width={360}
+              width={'25%'}
               height={"100%"}
               style={{ padding: 0, margin: 0}}
               
