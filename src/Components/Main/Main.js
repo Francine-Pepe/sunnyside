@@ -19,14 +19,17 @@ const areas = [
   },
 ];
 
+
 // const main = [
 //   {
 //     title: "Transform your brand",
-//     text: "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients throug compelling visuals that do most of the marketing for you."
+//     text: "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients throug compelling visuals that do most of the marketing for you.",
+//     image: Egg
 //   },
 //   {
 //     title: "Stand out to the right audience",
-//     text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places."
+//     text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
+//     image: Glass
 //   },
 // ]
 
@@ -36,7 +39,7 @@ export default function Main() {
       <main className="main_container">
         <div className="grid-container">
           <div className="grid-item">
-            <div className="grid-item_text">
+            <div className="grid-item_text" id="text">
               <h1>
                 Transform your <br /> brand
               </h1>
@@ -53,13 +56,13 @@ export default function Main() {
             </div>
           </div>
           <div className="grid-item">
-            <img src={Egg} alt="egg" />
+            <img src={Egg} alt="egg" id="egg" />
           </div>
           <div className="grid-item">
-            <img src={Glass} alt="egg" />
+            <img src={Glass} alt="glass" id="glass" />
           </div>
           <div className="grid-item">
-            <div className="grid-item_text">
+            <div className="grid-item_text" id="text">
               <h1>Stand out to the right audience</h1>
               <p>
                 Using a collaborative formula of designers, researchers,
@@ -75,8 +78,8 @@ export default function Main() {
           </div>
           {areas.map((areas, index) => (
             <div className="grid-item" key={index}>
-              <div className="grid-item_areas">
-                <div
+              <div className="grid-item_areas" >
+                <div id="areas"
                   style={{
                     backgroundImage: `url(${areas.image})`,
                     backgroundRepeat: "no-repeat",

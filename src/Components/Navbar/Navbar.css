@@ -42,8 +42,8 @@
 }
 
 #toggler,
-.navbar label,
-#triangle {
+.navbar label
+ {
   display: none;
 }
 
@@ -56,9 +56,9 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 787px) {
   .menu {
-    width: 100%;
+    width: 80vw;
     max-height: 0;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
@@ -74,7 +74,6 @@
   }
 
   .menu .list_container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +85,6 @@
     background-color: hsl(51, 100%, 49%);
     width: 8em;
     height: 3em;
-
   }
 
   .list {
@@ -113,12 +111,5 @@
   #toggler:checked ~ .menu {
     max-height: 100%;
   }
-
-  #triangle  {
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid red;
-    border-left: 100px solid transparent;
-  }
-  
 }
+
