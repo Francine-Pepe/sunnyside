@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background-position: center;
   display: block;
+  padding-bottom: 15em;
 }
 
 .middle_container {
@@ -16,7 +17,6 @@ body {
   align-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
   max-width: 1440px;
   gap: 7em;
 }
@@ -28,8 +28,6 @@ body {
   font-weight: 900;
   letter-spacing: 0.3em;
 }
-
-
 
 @media only screen and (max-width: 748px) {
   .middle_container h1 {
@@ -66,9 +64,26 @@ body {
     background-image: url("./../Images/Mobile/image-header.jpg");
     max-width: 1440px;
     height: 100vh;
-    background-position: center;
+    background-position: bottom;
     display: block;
     justify-content: center;
+    padding-bottom: 0;
   }
-  
+
+  .middle_container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    gap: 1em;
+  }
+
+  .middle_container h1 {
+    padding-top: 0;
+  }
+
+  .menu {
+    margin-top: 2em;
+  }
 }

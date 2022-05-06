@@ -37,9 +37,10 @@
 
 .grid-item_text p,
 .grid-item_areas p {
-  font-size: 18px;
+  font-size: 1.2em;
   font-family: "Barlow", sans-serif;
   color: hsl(232, 10%, 55%);
+  line-height: 2;
 }
 
 .grid-item_text {
@@ -73,7 +74,7 @@
 
 .grid-item_areas {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -158,5 +159,20 @@
     text-align: center;
     max-width: 32em;
     justify-content: center;
+  }
+
+  .grid-item_text h1,
+  .grid-item_areas h1 {
+    font-size: 2em;
+  }
+
+  .grid-item_text p,
+  .grid-item_areas p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .grid-item_areas_text {
+    max-width: 20em;
   }
 }
